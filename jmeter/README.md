@@ -11,6 +11,17 @@
 - `performance_test_wikipedia.jmx`: Test plan JMeter (3 Thread Group)
 - `results/`: chứa file CSV / ảnh chụp Summary Report sau khi chạy
 
+## Chạy bằng CLI (đã tạo sẵn)
+- Cài JMeter portable (tải về từ Apache, không commit lên repo):
+  - `powershell -ExecutionPolicy Bypass -File .\tools\setup-jmeter.ps1`
+- Chạy test plan và sinh kết quả:
+  - `powershell -ExecutionPolicy Bypass -File .\tools\run-jmeter.ps1`
+  - Kết quả sẽ sinh trong `jmeter/results/`:
+    - `jmeter-*.jtl` (log kết quả)
+    - `report-*/index.html` (HTML report, thư mục này đã được ignore để tránh đẩy lên GitHub)
+- Tính nhanh chỉ số để điền báo cáo:
+  - `powershell -ExecutionPolicy Bypass -File .\tools\analyze-jmeter.ps1`
+
 ## Cá nhân hoá tham số
 Trong file `.jmx` có biến (User Defined Variables):
 - `DOMAIN` (mặc định: `en.wikipedia.org`)
@@ -59,19 +70,19 @@ Mỗi Thread Group đã có `Constant Timer` (think time) để giảm tần su�
 
 ## Báo cáo kết quả (điền sau khi chạy)
 ### Kết quả TG1
-- Avg Response Time (ms):
-- Throughput (req/s):
-- Error Rate (%):
+- Avg Response Time (ms): 190.68
+- Throughput (req/s): 4.17
+- Error Rate (%): 0
 
 ### Kết quả TG2
-- Avg Response Time (ms):
-- Throughput (req/s):
-- Error Rate (%):
+- Avg Response Time (ms): 347.15
+- Throughput (req/s): 8.57
+- Error Rate (%): 0
 
 ### Kết quả TG3
-- Avg Response Time (ms):
-- Throughput (req/s):
-- Error Rate (%):
+- Avg Response Time (ms): 200.92
+- Throughput (req/s): 15.36
+- Error Rate (%): 0
 
 ## Nhận xét
 - 

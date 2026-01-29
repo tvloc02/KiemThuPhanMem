@@ -6,6 +6,18 @@ node_modules/
 cypress-exercise/cypress/videos/
 cypress-exercise/cypress/screenshots/
 
+# JMeter (portable install)
+tools/apache-jmeter-*/
+
+# JMeter results (keep .jtl, ignore generated HTML report folders)
+jmeter/results/report-*/
+
+# JMeter log
+jmeter.log
+
+# Java build output
+unit-test/target/
+
 # Logs
 npm-debug.log*
 yarn-debug.log*
