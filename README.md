@@ -32,19 +32,6 @@ Lớp `StudentAnalyzer` có 2 phương thức:
 - Đã chạy kiểm thử bằng JUnit Platform Console Standalone.
 - Kết quả: 10/10 test PASSED.
 
-Cách chạy lại kiểm thử (không cần Maven):
-
-```powershell
-java -jar unit-test\lib\junit-platform-console-standalone.jar \
-  --class-path "unit-test\target\classes;unit-test\target\test-classes" \
-  --scan-class-path
-```
-
-Nếu cần biên dịch lại trước khi chạy:
-
-```powershell
-javac -d unit-test\target\classes unit-test\src\main\java\StudentAnalyzer.java
-javac -cp "unit-test\lib\junit-platform-console-standalone.jar;unit-test\target\classes" \
-  -d unit-test\target\test-classes unit-test\src\test\java\StudentAnalyzerTest.java
-```
-
+Tuần 3:
+Video: D:\KiemThuPhanMem\KiemThuPhanMem\cypress-exercise\cypress\videos
+Screenshots: D:\KiemThuPhanMem\KiemThuPhanMem\cypress-exercise\cypress\screenshots
