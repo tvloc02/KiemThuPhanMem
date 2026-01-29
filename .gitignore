@@ -1,0 +1,16 @@
+# Node
+node_modules/
+**/node_modules/
+
+# Cypress
+cypress-exercise/cypress/videos/
+cypress-exercise/cypress/screenshots/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS/Editor
+.DS_Store
+.vscode/
